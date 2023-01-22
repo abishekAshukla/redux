@@ -1,14 +1,13 @@
-import Home from "./Home";
 import { useSelector } from "react-redux";
+import Header from "./components/Header";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 function App() {
-  const { c } = useSelector((state) => state.custome);
   return (
-    <div>
-      <h1>App Component: {c}</h1>
-      <Home />
-    </div>
+    <>
+    <Header/>
+    </>
   );
 }
 
